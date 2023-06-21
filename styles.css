@@ -1,0 +1,17 @@
+body{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container{
+display: flex;
+flex: 1 0 35%;
+background-image: url("./images/jungle-home.avif");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+}
+
+
