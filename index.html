@@ -18,29 +18,32 @@
                 <h2>This is not a real online service! You wish you had something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
                 <h2>You <em>know</em> you want to.</h2></h2>
         </div>
-                <span id="formContainer">
-                    <form id="form1">
-                        <fieldset>
-                        <h3>Contact Details</h3>
-                        <label for="first_name">First Name: </label>
-                        <input type="text" id="first_name" name="first_name">
-                        <label for="last_name">Last Name: </label>
-                        <input type="text" id="last_name" name="last_name">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                        <label for="phone">Phone Number: </label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                        <label for="password">Password: </label>
-                        <input type="password" id="password" name="password">
-                        <label for="confirmPassword">Confirm Password: </label>
-                        <input type="password" id="confirmPassword" name="confirmPassword">
-                        </fieldset>
+               
+                    <form id="form1" action="page_submission_URL" method="POST">
+                        <span id="formContainer">
+                            <fieldset>
+                            <h3>Contact Details</h3>
+                            <label for="first_name">First Name: </label>
+                            <input type="text" id="first_name" name="first_name"/>
+                            <label for="last_name">Last Name: </label>
+                            <input type="text" id="last_name" name="last_name"/>
+                            <label for="user_email">Email</label>
+                            <input type="email" id="user_email" name="email" required/>
+                            <label for="phone">Phone Number: </label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password" class="error"/>
+                            <label for="confirmPassword">Confirm Password: </label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="error"/>
+                            </fieldset>
+                        </span>
+                        <span class="bottomSection">
+                            <button class="button" id="create" type="submit" for="form1">Create Account</button>
+                            <p>Already have an account? <a href="index.html">Log In</a></p>
+                        </span>
                     </form>
-                </span>
-                <span class="bottomSection">
-                    <button class="button"><a href="index.html" id="create">Create Account</a></button>
-                    <p>Already have an account? <a href="index.html">Log In</a></p>
-                </span>
+                
+                
     </div>
    
       
