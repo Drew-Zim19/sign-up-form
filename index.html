@@ -6,13 +6,44 @@
     <title>Monke Bungalows Sign Up</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+  </style>
 <body>
     <div class="image-container">
     </div>
-    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-    <p>&nbsp;</p>
-    <p>You <em>know</em> you want to.</p>
-
+    <div class="rightSideContainer">
+        <div class="introText">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                <h2>You <em>know</em> you want to.</h2></h2>
+        </div>
+                <span id="formContainer">
+                    <form id="form1">
+                        <fieldset>
+                        <legend>Contact Details</legend>
+                        <label for="first_name">First Name: </label>
+                        <input type="text" id="first_name" name="first_name">
+                        <label for="last_name">Last Name: </label>
+                        <input type="text" id="last_name" name="last_name">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <label for="password">Password: </label>
+                        <input type="password" id="password" name="password">
+                        <label for="confirmPassword">Confirm Password: </label>
+                        <input type="password" id="confirmPassword" name="confirmPassword">
+                        </fieldset>
+                    </form>
+                </span>
+                <span class="bottomSection">
+                    <button class="button">Create Account</button>
+                    <p>Already have an account? <a href="/index.html">Log In</a></p>
+                </span>
+    </div>
+   
+      
+    
     <!--photo by Sasha Kaunas on Unsplash-->
 </body>
 </html>
